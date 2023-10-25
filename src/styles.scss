@@ -1,0 +1,24 @@
+@import './sass/variables';
+@import './sass/normalize';
+@import './sass/global';
+@import './sass/globalTitle';
+
+
+//Layout's
+@import './components/Layouts/mainLayout';
+@import './components/Layouts/layoutA';
+
+//memo
+@import './components/Navbar/navbar';
+
+//Presentation
+@import './components/Presentation/presentation';
+@import './components/Presentation/btnPresentation';
+@import './components/Presentation/titlePresentation';
+
+//Other components
+@import './components/Button/button';
+@import './components/Username/username';
+@import './components/PageA/pageA';
+@import './components/Letter/letter';
+@import './components/Icon/icon';

@@ -1,0 +1,27 @@
+.titleContainer{
+    position: absolute;
+    width: 140vh;
+    height: 20vh;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitle{
+    font-size: 70px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 900;
+    color: white;
+    transition: .3s ease-in-out all;
+}
+
+.mainTitleOne{
+    position: absolute;
+    top: -15px;
+}
+
+.mainTitleTwo{
+    position: absolute;
+    bottom: -15px;
+}

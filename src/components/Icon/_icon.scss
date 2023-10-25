@@ -1,0 +1,15 @@
+.icon{
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 900;
+    margin-top: 30px;
+    color: $main-color-letter;
+    transform: rotate(-10deg);
+
+    filter: drop-shadow(-4px 4px 0px #97f4ab);
+    transition: all ease-in-out 0.3s;
+
+    &:hover{
+        font-size: 110px;
+    }
+}

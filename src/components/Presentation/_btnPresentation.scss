@@ -1,0 +1,26 @@
+.mainBtnPresentation{
+    &::after{
+        content: '';
+        width: 140%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: calc(-140% - 100px);
+        border-bottom: 100px solid #286cff;
+        border-right: 100px solid transparent;
+        transition: .4s ease-in-out all;
+    }
+
+    &__spanMainTitle{
+        z-index: 3;
+    }
+
+    &__arrowIcon{
+        font-size: 30px;
+        color: $main-color-txt;
+        display: inline-flex;
+        justify-content: center;
+        align-self: center;
+        transition: .4s ease-in-out all;
+    }
+}

@@ -1,0 +1,55 @@
+.presentationContainer{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .txtBotton{
+        position: absolute;
+        bottom: 0;
+        margin: 1em;
+        color: white;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 600;
+    }
+
+    &__presentation{
+        width: 500px;
+        min-height: 500px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        &:hover{
+            cursor: pointer;
+            .mainTitleOne{
+                top: -45%;
+            }
+            .mainTitleTwo{
+                bottom: -45%;
+            }
+            .mainBtnPresentation{
+                &::after{
+                    left: 0;
+                }
+
+                &__arrowIcon{
+                    font-size: 38px;
+                }
+            }
+            .button{
+                z-index: 999;
+                width: 380px;
+                height: 100px;
+                .button__span{
+                    font-size: 28px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

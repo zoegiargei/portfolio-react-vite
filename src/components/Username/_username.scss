@@ -1,0 +1,27 @@
+.usernameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.usernameTitle{
+    font-size: 300%;
+    text-transform: uppercase;
+}
+
+.viewUsername{
+    color: $main-color-txt;
+    font-size: 250%;
+}
+
+.usernameBtn{
+    width: 140px;
+    height: 40;
+    padding: 1em;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: $main-btn-hover;
+}
