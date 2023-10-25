@@ -1,4 +1,3 @@
-import Button from '../Button/Button.js'
 import Layout from '../Layouts/Layout.js'
 import Letter from '../Letter/Letter.js'
 import { BsArrowRightShort } from 'react-icons/bs'
@@ -45,12 +44,6 @@ const PageA = (props: PageAProps) => {
                     </h1>
                     <h1 className='fragments'>{props.close}</h1>    
                 </div>
-
-                <Button 
-                    buttonClass='button btnWhoIAm animate__animated animate__flash animate__delay-2s'
-                    renderBtnContent={btnContent()}
-                    btnPath='/whoiam'
-                />
             </div>
             
 

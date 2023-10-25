@@ -5,17 +5,17 @@
 	align-items: center;
 	width: 280px;
 	height: 80px;
-	background-color: black;
+	background-color: $blue;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: .3s ease all;
+	transition: .3s ease-in-out all;
 	overflow: hidden;
 
 	&__span{
 		margin: 1em;
 		text-align: center;
-		color: $main-color-txt;
+		color: $white;
 		font-size: 20px;
 		font-weight: 500;
 		transition: .3s ease all;

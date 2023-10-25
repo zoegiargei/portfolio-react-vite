@@ -1,9 +1,11 @@
 .navbarContainer{
     position: fixed;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
+    top: 0;
+    width: 95%;
+    height: 100px;
     z-index: 99;
+    background-color: transparent;
+    border-bottom: 1px solid #fefce1a3;
 
     display: flex;
     flex-direction: row;
@@ -19,17 +21,18 @@
     }
 
     &__links, &__icon, &__username{
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
         li{
-            padding: 0 15px;
+            padding: 0 10px;
             list-style: none;
-            font-size: 120%;
+            font-size: 100%;
             font-weight: 500;
-            color: $main-color-txt;
+            color: $white;
         }
     }
 
@@ -42,18 +45,25 @@
             text-transform: uppercase;
             transition: all ease-in-out 0.3s;
             &:hover{
-                font-size: 140%;
-                filter: drop-shadow(-1px 1px 0px $main-color-letter);
+                font-size: 110%;
+                // filter: drop-shadow(-1px 1px 0px $pink);
             }
 
             .link{
                 text-decoration: none;
-                color: $main-color-txt;
+                color: $white;
+                border-radius: 25px;
+                padding: 10px;
+            }
+
+            .lastLink{
+                border: 2px solid $white;
             }
         }
     }
 
     &__icon{
+        content: 'Z';
         position: absolute;
         left: 0;
         font-size: 25px;

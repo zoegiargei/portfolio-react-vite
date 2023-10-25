@@ -9,7 +9,7 @@ const Navbar = (props: NavbarProps) => {
     return(
         <nav className='navbarContainer'>
             <ul className='navbarContainer__icon'>
-                <li>
+                <li className='icon__container'>
                     <Link to={'/'} className='link'>
                         <Icon icon='Z' />
                     </Link>
@@ -18,11 +18,18 @@ const Navbar = (props: NavbarProps) => {
             
             <ul className='navbarContainer__links'>
                 {
-                    props.links.map((link) => {
-                        const ModLink = '{ ' + link + ' }'
+                    props.links.map((link, index) => {
+                        const qtyLinks = props.links.length - 1
+                        let linkClass = 'link'
+
+                        if (index === qtyLinks) {
+                            linkClass = 'link lastLink'
+                        }
+
                         return(
-                            <li className='navLink'><Link to={`/${ link }`.toString()} className='link'> { ModLink } </Link></li>
+                            <li className='navLink'><Link to={`/${ link }`.toString()} className={linkClass}> { link } </Link></li>
                         )
+
                     }
                     )
                 }

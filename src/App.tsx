@@ -3,11 +3,12 @@ import { BsArrowRightShort } from 'react-icons/bs'
 import Presentation from './components/Presentation/Presentation.js'
 import PageA from './components/PageA/PageA.js'
 import Navbar from './components/Navbar/Navbar.js'
+import Layout from './components/Layouts/Layout.js';
 
 const App = () => {
 
   return (
-    <>
+    <Layout>
       <Navbar links={ ['Who I Am ?', 'fullstack' ] }/>
 
       <Routes>
@@ -53,7 +54,7 @@ const App = () => {
         />
 
       </Routes>
-    </>
+    </Layout>
   )
 }
 

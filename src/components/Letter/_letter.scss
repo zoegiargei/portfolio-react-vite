@@ -13,9 +13,9 @@
         text-transform: uppercase;
         font-size: 600px;
         font-weight: 900;
-        color: $main-color-letter;
+        color: $white;
         
-        filter: drop-shadow(-30px 15px 0px #97f4ab);
+        filter: drop-shadow(-30px 15px 0px $transparent-white);
         animation: move-letter 3.5s linear infinite;
         transition: all ease-in-out 0.3s;
 

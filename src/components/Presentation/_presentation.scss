@@ -10,7 +10,7 @@
         position: absolute;
         bottom: 0;
         margin: 1em;
-        color: white;
+        color: $white;
         font-family: 'Hanken Grotesk', sans-serif;
         font-weight: 600;
     }
@@ -47,8 +47,13 @@
                 height: 100px;
                 .button__span{
                     font-size: 28px;
+                    color: $black;
                     cursor: pointer;
                 }
+            }
+
+            .mainBtnPresentation__arrowIcon{
+                color: $black;
             }
         }
     }
